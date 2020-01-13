@@ -31,7 +31,7 @@ node {
     
     stage('Deploy Image'){
         
-        app.run("test")
+        app.run("aabha94/nodeapp")
     }
 }
     
