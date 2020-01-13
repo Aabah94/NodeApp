@@ -28,4 +28,10 @@ node {
             } 
                 echo "Trying to Push Docker Build to DockerHub"
     }
+    
+    stage('Deploy Image'){
+        
+        docker run -p 8081:8081 --name test aabha94/nodeapp
+    }
 }
+    
