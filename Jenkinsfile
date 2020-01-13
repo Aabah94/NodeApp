@@ -31,7 +31,7 @@ node {
     
     stage('Deploy Image'){
         
-        "docker run -p 8081:8081 --name test aabha94/nodeapp"
+        app.run("test")
     }
 }
     
